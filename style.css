@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+header{
+    position: relative;
+    height: 70dvh;
+    width: 100%;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(330deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgb(5, 118, 90) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    padding: 10rem 0;
+}
+
+header h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0 20%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+background: linear-gradient(90deg, rgba(251,148,63,1) 0%, rgba(252,70,107,1) 100%);
+border-radius: 16px;
+width: auto;
+padding: 4rem 1.5rem;
+height: auto;
+
+}
+
+.cards p {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .hero{
+        padding: 0 8%;
+    }
+}
+
+@media (max-width:620px) {
+    header h2{
+        font-size: 40px;
+    }   
+
+    .hero {
+        top:45%;
+    }
+}
+
+@media (max-width:456px) {
+    header h2{
+        font-size: 35px;
+    }   
+
+    .hero {
+        top:30%;
+    }
+
+    header{
+        height: 50dvh;
+        padding: 6rem 0;
+    }
+
+    .cards{
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width:300px) {
+    header h2{
+        font-size: 25px;
+    }   
+
+    .hero {
+        top:25%;
+    }
+
+    .cards p {
+        font-size: 22px;
+    }
+}
