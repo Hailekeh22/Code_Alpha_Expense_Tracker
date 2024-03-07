@@ -42,8 +42,18 @@ header h2 {
 }
 
 .cards p {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bolder;
     color: #fff;
+}
+
+
+.container{
+    margin: 10rem 15%;
+    height: 35rem;
+    border-radius: 20px;
+  
+    background-color: beige;
 }
 
 
