@@ -68,16 +68,41 @@ header h2 {
 .incomesection{
     background-color: crimson;
     width: 48%;
-    height: 8rem;
+    height: 13rem;
     border-radius: 10px;
+    padding: 3rem 3rem;
 }
 
 .expensesection{
     background-color: crimson;
     width: 48%;
-    height: 8rem;
+    height: 13rem;
     border-radius: 10px;
+    padding: 2rem 3rem;
+
 }
+
+.sectiontittle{
+    color: #fff;
+    font-size: 20px;
+}
+
+.inputbox{
+    width: 100%;
+    height: 2rem;
+    padding: .5rem .5rem;
+    margin-top: .5rem;
+}
+
+.addbtn{
+    margin-top: .5rem;
+    width: 100%;
+    height: 2rem;
+    background: none;
+    outline: none;
+    border: 1px solid black;
+}
+
 
 
 
