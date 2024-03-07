@@ -45,6 +45,8 @@ header h2 {
     font-size: 25px;
     font-weight: bolder;
     color: #fff;
+    text-transform: capitalize;
+    
 }
 
 
@@ -52,8 +54,29 @@ header h2 {
     margin: 10rem 15%;
     height: 35rem;
     border-radius: 20px;
-  
     background-color: beige;
+}
+
+.controlers{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.incomesection{
+    background-color: crimson;
+    width: 48%;
+    height: 8rem;
+    border-radius: 10px;
+}
+
+.expensesection{
+    background-color: crimson;
+    width: 48%;
+    height: 8rem;
+    border-radius: 10px;
 }
 
 
