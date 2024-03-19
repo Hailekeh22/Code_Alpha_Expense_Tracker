@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(64, 87, 80);
+    background-color: rgb(30, 35, 33);
 }
 
 header{
@@ -56,12 +56,12 @@ header h2 {
 
 
 .container{
-    margin: 10rem 15%;
-    height: 35rem;
+    margin: 5rem 15% ;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     background-color: beige;
+    height: auto;
 }
 
 .controlers{
@@ -125,8 +125,7 @@ header h2 {
 
 .totalcount{
     width: 100%;
-    height: 7rem;
-    
+    height: 7rem;  
     background: linear-gradient(330deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgb(5, 118, 90) 100%);
 }
 
@@ -146,10 +145,47 @@ header h2 {
 
 .individualcount{
     margin-top: 1rem;
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
     width: 100%;
-    background-color: blue;
     height: 5rem;
+}
+
+#expensecount{
+    width: 100%;
+    height: 3.5rem;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2% 5%;
+    background-color: #d2ece0;
+    border-left: 1.5rem solid red;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+#incomecount {
+    width: 100%;
+    height: 3.5rem;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2% 5%;
+    background-color: #d2ece0;
+    border-left: 1.5rem solid rgb(15, 223, 15);
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.incomes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expenses{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
