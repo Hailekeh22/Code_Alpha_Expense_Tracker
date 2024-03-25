@@ -23,8 +23,8 @@
         <div class="controlers">
             <div class="incomesection">
                 <p class="sectiontittle">INCOME</p>
-                <input class="inputbox" type="text" placeholder="Income Source"><br>
-                <input class="inputbox" type="number" placeholder="Enter Amount">
+                <input id="incomesouce" class="inputbox" type="text" placeholder="Income Source"><br>
+                <input id="incomeamount" class="inputbox" type="number" placeholder="Enter Amount">
                 <button class="addbtn addincome">Add Income</button>
             </div>
 
@@ -32,14 +32,14 @@
                 <p class="sectiontittle">EXPENSE</p>
                 <input class="inputbox" type="text" placeholder="Enter Product Name"><br>
                 <input class="inputbox" type="number" placeholder="Enter Amount">
-                <button class="addbtn">Add Expense</button>
+                <button class="addbtn addexpence">Add Expense</button>
             </div>
         </div>
 
         <div class="displaysection">
             <div class="totalcount">
                 <div class="totalincomesec">
-                    <p class="amount">Account Balance  <span class="incomeamount">1000</span> </p>
+                    <p class="amount">Account Balance  <span id="totalbalance">500</span> </p>
                 </div>
                 <div class="totalexpensesec">
                     <p class="amount">Total Expense  <span class="expenseamount">600</span></p>
