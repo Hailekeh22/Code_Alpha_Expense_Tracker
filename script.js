@@ -19,12 +19,12 @@ function updatetotalbalance() {
   }
 }
 
-function addincomelist(s, a) {
+function addincomelist(source, amount) {
   let individualcount = document.querySelector(".individualcount");
 
   let creteincomelist = document.createElement("div");
   creteincomelist.classList.add("incomecount");
-  creteincomelist.innerHTML = `<p class="inctitle">${s}</p> <p class="inc">+ ${a}</p>`;
+  creteincomelist.innerHTML = `<p class="inctitle">${source}</p> <p class="inc">+ ${amount}</p>`;
 
   individualcount.appendChild(creteincomelist);
 }
@@ -49,10 +49,24 @@ function updatetotalexpence() {
     if (previousbalance >= newexpence) {
       totalexpence.innerHTML = previousexpence + newexpence;
       totalbalance.innerHTML = previousbalance - newexpence;
+      document.getElementById("expenceamount").value = "";
+      document.getElementById("expencename").value = "";
+
+      addexpencelist(expencename, expenceamount);
     } else {
       alert("Insaficient Balance");
     }
   }
+}
+
+function addexpencelist(expname, expamount) {
+  let individualcount = document.querySelector(".individualcount");
+
+  let creteexpencelist = document.createElement("div");
+  creteexpencelist.classList.add("expensecount");
+  creteexpencelist.innerHTML = `<p class="exptitle">${expname}</p> <p class="exp">- ${expamount}</p>`;
+
+  individualcount.appendChild(creteexpencelist);
 }
 
 addexpence.addEventListener("click", () => {
