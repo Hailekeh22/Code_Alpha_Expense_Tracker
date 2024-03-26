@@ -11,7 +11,7 @@ function updatetotalbalance() {
   } else {
     amt = parseInt(totalbalance.innerHTML);
 
-    updatedbalance = totalbalance.innerHTML = amt + parseInt(incomeamount);
+    totalbalance.innerHTML = amt + parseInt(incomeamount);
 
     document.getElementById("incomesouce").value = "";
     document.getElementById("incomeamount").value = "";
@@ -36,4 +36,25 @@ addincome.addEventListener("click", () => {
 function updatetotalexpence() {
   let expencename = document.getElementById("expencename").value;
   let expenceamount = document.getElementById("expenceamount").value;
+  let totalexpence = document.getElementById("totalexpence");
+  let totalbalance = document.getElementById("totalbalance");
+
+  if (expencename == "" || expenceamount <= 0 || expenceamount == "") {
+    alert("Please Enter a valid input");
+  } else {
+    let previousexpence = parseFloat(totalexpence.innerHTML);
+    let newexpence = parseFloat(expenceamount);
+    let previousbalance = parseFloat(totalbalance.innerHTML);
+
+    if (previousbalance >= newexpence) {
+      totalexpence.innerHTML = previousexpence + newexpence;
+      totalbalance.innerHTML = previousbalance - newexpence;
+    } else {
+      alert("Insaficient Balance");
+    }
+  }
 }
+
+addexpence.addEventListener("click", () => {
+  updatetotalexpence();
+});
