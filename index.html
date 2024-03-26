@@ -30,8 +30,8 @@
 
             <div class="expensesection">
                 <p class="sectiontittle">EXPENSE</p>
-                <input class="inputbox" type="text" placeholder="Enter Product Name"><br>
-                <input class="inputbox" type="number" placeholder="Enter Amount">
+                <input id="expencename" class="inputbox" type="text" placeholder="Enter Product Name"><br>
+                <input id="expenceamount" class="inputbox" type="number" placeholder="Enter Amount">
                 <button class="addbtn addexpence">Add Expense</button>
             </div>
         </div>
@@ -48,17 +48,10 @@
 
 
             <div class="individualcount">
-                <div id="expensecount">
-                    <div class="expenses">
-                        <p>Food</p> <p>- 400</p>
-                    </div>
-                </div>
-                <div id="incomecount">
-                    <div class="incomes">
-                        <p>Income</p> <p>+ 400</p>
-                    </div>
-                </div>
-                
+                <div class="expensecount">
+                    <p class="exptitle">Food</p> <p class="exp">- 400</p>
+                </div>        
+                    
             </div>
         </div>
     </div>
