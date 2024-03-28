@@ -54,7 +54,7 @@ function updatetotalexpence() {
 
       addexpencelist(expencename, expenceamount);
     } else {
-      alert("Insaficient Balance");
+      alert("insufficient Balance");
     }
   }
 }
